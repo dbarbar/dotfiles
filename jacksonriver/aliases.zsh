@@ -13,7 +13,11 @@ alias -r sb4up="cd ~/Development/work/sb4 && vagrant up"
 alias -r sb4down="cd ~/Development/work/sb4 && vagrant suspend"
 
 # Harvest
-alias -r day-start="hcl start ops Day start"
-alias -r pu-call="hcl start meetings Project update call"
-alias -r platform-call="hcl start sb4meetings Platform call"
+alias -r day-start="hcl start ops Day start and email"
+alias -r pu-call="hcl start jrmeetings Project update call"
+alias -r company-meeting="hcl start jrmeetings Company meeting"
+alias -r platform-standup="hcl start sb4meetings Platform standup call"
+alias -r p2p-checkin="hcl start p2pmeetings P2P status call"
 
+sb4dev() { hcl start sb4dev $* }
+p2pdev() { hcl start p2pdev $* }
