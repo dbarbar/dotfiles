@@ -1,0 +1,46 @@
+[hub]
+        protocol = https
+[user]
+        name = David Barbarisi
+        email = davidbarbarisi@gmail.com
+[credential]
+        helper = GIT_CREDENTIAL_HELPER
+[alias]
+        co = checkout
+        promote = !$HOME/.dotfiles/bin/git-promote
+        wtf     = !$HOME/.dotfiles/bin/git-wtf
+        rank-contributors = !$HOME/.dotfiles/bin/git-rank-contributors
+        count   = !git shortlog -sn
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+        autocrlf = input
+        editor = subl -w
+        excludesfile = !$HOME/.gitignore
+        safecrlf = true
+[apply]
+        whitespace = nowarn
+[merge]
+        tool = Kaleidoscope
+[mergetool]
+        keepBackup = false
+[mergetool "Kaleidoscope"]
+        cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+        trustExitCode = true
+[diff]
+        tool = Kaleidoscope
+[difftool]
+        prompt = false
+[difftool "Kaleidoscope"]
+        cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[help]
+        autocorrect = 1
+[push]
+        # See `git help config` (search for push.default)
+        # for more information on different options of the below setting.
+        #
+        # Setting to git 2.0 default to surpress warning message
+        default = simple
