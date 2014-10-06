@@ -18,7 +18,7 @@
         ui = true
 [core]
         autocrlf = input
-        editor = subl -w
+	editor = subl -n -w
         excludesfile = !$HOME/.gitignore
         safecrlf = true
 [apply]
