@@ -3,6 +3,7 @@
 *~
 *.swp
 .idea
+.idea/
 ._*
 .Spotlight-V100
 .Trashes
