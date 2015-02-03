@@ -4,7 +4,7 @@
         name = David Barbarisi
         email = davidbarbarisi@gmail.com
 [credential]
-        helper = GIT_CREDENTIAL_HELPER
+        helper = osxkeychain
 [alias]
         co = checkout
         promote = !$HOME/.dotfiles/bin/git-promote
