@@ -1,7 +1,5 @@
 alias -r workday="open /Applications/Skype.app ; open /Applications/HipChat.app ; open /Applications/Harvest.app"
 
-dru() { php -l "$*" && phpcs --standard=Drupal "$*"}
-
 sb4() { open https://api.gospringboard.com/api/sb/4/search/$* }
 
 alias -r work="cd ~/Development/work"
