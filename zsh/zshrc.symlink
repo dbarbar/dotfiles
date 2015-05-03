@@ -85,7 +85,7 @@ ZSH_THEME="cloud"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew composer gem github knife last-working-dir node npm nyan osx phing sublime terminalapp vagrant web-search bundler catimg command-not-found copydir copyfile cp knife_ssh sudo symfony2 systemadmin)
+plugins=(vagrant git git-extras git-flow-avh github aws brew composer docker gem)
 
 source $ZSH/oh-my-zsh.sh
 
