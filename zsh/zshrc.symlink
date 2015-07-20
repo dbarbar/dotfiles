@@ -1,5 +1,9 @@
 export DOTFILES_ROOT=$HOME/.dotfiles
 
+export PROJECT_HOME=$HOME/devel
+
+export RBENV_ROOT=$HOME/.rbenv
+
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Development
 
@@ -85,7 +89,7 @@ ZSH_THEME="cloud"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(vagrant git git-extras git-flow-avh github aws brew composer docker gem)
+plugins=(vagrant git git-extras github aws brew composer docker virtualenv virtualenvwrapper rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
