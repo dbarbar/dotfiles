@@ -96,8 +96,6 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
 fi
 export GPG_TTY=$(tty)
 
-eval "$(pyenv init -)"
-
 export PATH="$DOTFILES_ROOT/bin:$PATH"
 
 # credit: http://nparikh.org/notes/zshrc.txt
@@ -126,3 +124,5 @@ extract () {
         echo "'$1' is not a valid file"
     fi
 }
+
+eval "$(pipenv --completion)"

@@ -13,6 +13,7 @@ dj() {
   open $(python -c "import urllib; print 'https://docs.djangoproject.com/en/1.8/search/?' + urllib.urlencode({'q': '$1'})")
 }
 
+alias -r techboard="open https://industrydive.atlassian.net/secure/RapidBoard.jspa?rapidView=32"
 alias -r jira="open https://industrydive.atlassian.net/secure/Dashboard.jspa"
 alias -r wiki="open https://industrydive.atlassian.net/wiki/discover/all-updates"
 
